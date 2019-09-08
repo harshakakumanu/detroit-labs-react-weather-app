@@ -42,18 +42,18 @@ class HomePage extends Component {
         <Paper>
           <MenuBar/>
           <div style={styles.container}>
-            <Typography component="h1">
+            <Typography variant="h1">
               {data.name}
             </Typography>
-            <Typography component="h1">{Math.floor(data.main.temp)}&deg;F</Typography>
+            <Typography variant="h2">{Math.floor(data.main.temp)}&deg;F</Typography>
             <img src={`http://openweathermap.org/img/w/${data.weather[0].icon}.png`} alt={data.weather[0].main} />
             {data.weather[0].description}
-            <div>
+             <Typography variant="h6">
               Low : {Math.floor(data.main.temp_min)}&deg;F
-            </div>
-            <div>
+            </Typography>
+            <Typography variant="h6">
               High : {Math.floor(data.main.temp_max)}&deg;F
-            </div>
+            </Typography>
           </div>
         </Paper>
       </div>

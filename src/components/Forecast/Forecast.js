@@ -49,7 +49,7 @@ class Forecast extends Component {
       <div>
         <MenuBar/>
         <div>
-          <Typography component="h2">
+          <Typography variant="h2">
             {data.city.name}
           </Typography>
         </div>
