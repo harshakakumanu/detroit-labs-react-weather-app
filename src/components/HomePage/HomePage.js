@@ -1,3 +1,6 @@
+/**
+ *Homepage - Root page for displaying user current weather conditions
+ */
 import React, { Component } from 'react';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import Paper from '@material-ui/core/Paper';
@@ -10,6 +13,9 @@ class HomePage extends Component {
     error: null,
   };
 
+  /**
+   *Ajax Call for fetching users current location weather data.
+   */
   componentDidMount() {
     getWeatherData('weather').then(result => {
       const { error, url } = result;
@@ -54,7 +60,9 @@ class HomePage extends Component {
     );
   }
 }
-
+/**
+ *Styles
+ */
 const styles = {
   container: {
     display: 'flex',

@@ -1,3 +1,6 @@
+/**
+ *To construct URL from User's Location
+ */
 export const getWeatherData = async type => {
   try {
     const { latitude, longitude } = await getCurrentLocation();
@@ -9,6 +12,9 @@ export const getWeatherData = async type => {
   }
 };
 
+/**
+ *Getting users current location
+ */
 export const getCurrentLocation = () => {
   return new Promise(async (resolve, reject) => {
     if (navigator.geolocation) {

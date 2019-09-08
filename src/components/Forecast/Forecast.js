@@ -1,3 +1,6 @@
+/**
+ *Forecast - Forecast page for displaying 5 Day 3 hour interval weather data
+ */
 import React, { Component } from 'react';
 import MenuBar from '../MenuBar/MenuBar'
 import Typography from '@material-ui/core/Typography';
@@ -17,6 +20,9 @@ class Forecast extends Component {
     error: null,
   };
 
+  /**
+   *Ajax Call for fetching users current location weather data for 5 days and 3 hour interval.
+   */
   componentDidMount() {
     getWeatherData('forecast').then(result => {
       const { error, url } = result;
