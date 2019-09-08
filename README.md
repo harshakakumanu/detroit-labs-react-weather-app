@@ -1,4 +1,4 @@
-Weather Application with current weather and 5 day forecast
+Weather Application with current weather and 5 day forecast - Detroit Labs
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
